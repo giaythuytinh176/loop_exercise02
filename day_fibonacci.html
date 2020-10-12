@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--Bài 1: In dãy Finonaci-->
+
+
+<script>
+
+
+    console.log(fibonacci(111))
+
+    function fibonacci(n) {
+        let a1 = 1;
+        let a2 = 1;
+        if (n == 1 || n == 2) return 1;
+        let i = 3;
+        let a;
+        while (i <= n) {
+            a = a1 + a2;
+            a1 = a2;
+            a2 = a;
+            i++;
+
+        }
+        return a;
+
+    }
+
+
+</script>
+
+</body>
+</html>
