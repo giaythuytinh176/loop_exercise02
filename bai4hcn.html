@@ -9,16 +9,20 @@
 <!--Bài 4: In hình chữ nhật-->
 
 
-
 <script>
-    for (let i = 1; i < 22; i++) {
-        document.write("*");
-        if ((i + 11)/2 > 11){
-            document.write("<br>");
-        }
-        document.write("*");
-    }
+    let height = +prompt("Nhap chieu rong cua hcn");
+    let width  = +prompt("Nhap chieu cao cua hcn");
 
+    for (let i = 1; i <= width; i++) {
+        document.write("<br>");
+        for (let j = 1; j <= height; j++) {
+            if (i == 1 || i == width || j == 1 || j == height) {
+                document.write("*");
+            } else {
+                document.write("&nbsp;&nbsp;");
+            }
+        }
+    }
 
 
 </script>
